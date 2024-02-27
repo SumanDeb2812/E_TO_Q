@@ -1,0 +1,261 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Caveat", cursive;
+}
+body{
+    background-image: linear-gradient(120deg, rgb(63, 63, 236), rgb(230, 131, 147));
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    flex-direction: column;
+}
+.excel-logo, .sql-logo{
+    position: absolute;
+    z-index: 0;
+    width: 350px;
+}
+.copyright{
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    font-size: 20px;
+}
+.excel-logo{
+    top: -55px;
+    left: -75px;
+    transform: rotate(25deg);
+}
+.sql-logo{
+    bottom: -40px;
+    right: -120px;
+    transform: rotate(-20deg);
+}
+.outer-box{
+    padding: 50px;
+    width: 80vw;
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0);
+    z-index: 1;
+    position: relative;
+}
+.outer-box h1{
+    margin-bottom: 50px;
+    letter-spacing: 2px;
+}
+.inner-box{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.form-box{
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.choose-box{
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.choose-box a{
+    width: 100%;
+}
+.choose-box button{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid black;
+    padding: 5px 0;
+    width: 100%;
+    font-size: 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.5s;
+}
+.choose-box button:hover{
+    background-color: black;
+    color: white;
+}
+.button-select{
+    background-color: black !important;
+    color: white;
+}
+.form-box p{
+    margin-bottom: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 25px;
+    padding: 0 50px;
+}
+.form-box form{
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 50px;
+}
+.form-box form input:nth-child(2){
+    font-size: 20px;
+    border: none;
+    margin-bottom: 20px;
+}
+.form-box form input:nth-child(3){
+    background-color: transparent;
+    border: none;
+    padding: 3px 15px;
+    box-shadow: 0 0 5px black;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.form-box form input:nth-child(3):hover{
+    background-color: black;
+    color: white;
+}
+.form-box form input::file-selector-button {
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: black;
+    font-size: 16px;
+    padding: 2px 15px;
+    color: white;
+    cursor: pointer;
+}
+.errorMsg{
+    padding: 0 0 20px 20px;
+    font-size: 20px;
+    color: white;
+}
+.download{
+    border: 1px solid black;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: black;
+}
+.download img{
+    width: 200px;
+}
+.after-download{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.after-download p{
+    color: white;
+    margin-bottom: 50px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 25px;
+}
+.after-download img{
+    width: 60px;
+}
+
+.set-data-type form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.set-data-type form input{
+    width: 200px;
+    background-color: transparent;
+    border: 1px solid black;
+    font-size: 22px;
+    font-weight: bold;
+    outline: none;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+.set-data-type form select{
+    width: 200px;
+    background-color: transparent;
+    border: 1px solid black;
+    font-size: 21px;
+    font-weight: bold;
+    outline: none;
+    border-radius: 10px;
+}
+#submit-btn{
+    margin-top: 10px;
+    font-size: 18px;
+    padding: 0 5px;
+    width: 100px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+.table-name{
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.table-name label{
+    font-size: 22px;
+    font-weight: 600;
+}
+.table-name input{
+    width: 500px !important;
+}
+.set-data-type table thead tr th{
+    font-size: 22px;
+}
+
+
+.info{
+    font-size: 30px;
+    font-weight: 600;
+    border: 1px solid black;
+    border-radius: 50%;
+    padding: 0 16px;
+    background-color: black;
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    cursor: pointer;
+}
+.infoBox{
+    background-color: black;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    animation: slowlyopen 1s;
+    transform: translate(-20px, 20px);
+}
+@keyframes slowlyopen {
+    0% {scale: 0.25; transform: translate(20px, 20px);}
+    100% {scale: 1; transform: translate(-20px, 20px);}
+}
+.infoBox p{
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 2px;
+    letter-spacing: 1px;
+}
+.infoBox img{
+    width: 90%;
+    border-radius: 5px;
+}
